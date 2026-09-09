@@ -3659,3 +3659,172 @@ blockquote {
   }
 }
 
+/* =========================
+   MOBILE NAVIGATION
+========================= */
+
+.mobile-menu {
+  display: none;
+  border: none;
+  background: transparent;
+  color: var(--white);
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1002;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* =========================
+   MOBILE DEVICES
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .nav-inner {
+    min-height: 72px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 48px;
+  }
+
+  .logo img {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+  }
+
+  /* Hide desktop links */
+  .nav-links {
+    display: none !important;
+  }
+
+  /* Show hamburger */
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Mobile dropdown */
+  .mobile-nav {
+    display: block;
+    width: 100%;
+    background: var(--black);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+    /* IMPORTANT */
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .mobile-nav-inner {
+    padding: 12px 20px 24px;
+  }
+
+  .mobile-nav-inner > div {
+    width: 100%;
+  }
+
+  .mobile-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 52px;
+
+    padding: 14px 4px;
+
+    color: var(--white);
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .mobile-nav a.active {
+    color: var(--coffee);
+  }
+
+  .mobile-active-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--coffee);
+    flex-shrink: 0;
+  }
+
+  /* Reserve button */
+  .mobile-reserve-button {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    width: 100% !important;
+    min-height: 52px !important;
+
+    margin-top: 18px;
+    padding: 14px 20px !important;
+
+    background: var(--coffee);
+    color: var(--white) !important;
+
+    border: none !important;
+    border-radius: 2px;
+
+    font-weight: 600 !important;
+    text-align: center;
+
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .mobile-reserve-button:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+
+  .nav-inner {
+    padding: 0 15px;
+  }
+
+  .mobile-nav-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .mobile-nav a {
+    font-size: 14px;
+  }
+
+}

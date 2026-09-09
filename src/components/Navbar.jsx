@@ -44,9 +44,9 @@ function Navbar() {
       <div className="container nav-inner">
 
         {/* LOGO */}
-        <Link to="/" className="logo">
-        
-        </Link>
+       <Link to="/" className="logo">
+  <img src="/images/logo.jpg" alt="Indabo Café" />
+</Link>
 
         {/* DESKTOP NAVIGATION */}
         <nav className="nav-links">
