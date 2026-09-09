@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://YOUR-DOMAIN.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://YOUR-DOMAIN.com/menu</loc>
+  </url>
+
+  <url>
+    <loc>https://YOUR-DOMAIN.com/story</loc>
+  </url>
+
+  <url>
+    <loc>https://YOUR-DOMAIN.com/gallery</loc>
+  </url>
+
+  <url>
+    <loc>https://YOUR-DOMAIN.com/locations</loc>
+  </url>
+
+  <url>
+    <loc>https://YOUR-DOMAIN.com/reservations</loc>
+  </url>
+
+  <url>
+    <loc>https://YOUR-DOMAIN.com/contact</loc>
+  </url>
+
+</urlset>
